@@ -1,0 +1,59 @@
+@import "variables";
+
+.foda-container {
+  background-color: $color-de-fondo; /* Fondo oscuro */
+  color: $color-texto; /* Color del texto */
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  max-width: 1000px;
+  line-height: 1.8;
+  font-family: "Arial", sans-serif;
+}
+
+.foda-titulo {
+  font-size: 2.5em;
+  color: $color-principal;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.foda-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.foda-seccion {
+  margin-bottom: 20px;
+}
+
+.foda-seccion label {
+  font-size: 1.4em;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.foda-seccion textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.foda-button {
+  padding: 10px 20px;
+  font-size: 1.4em;
+  font-weight: bold;
+  background-color: $color-principal;
+  color: $button-text-color;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.foda-button:hover {
+  background-color: darken($color-principal, 10%);
+}

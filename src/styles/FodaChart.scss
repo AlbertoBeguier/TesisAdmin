@@ -1,0 +1,12 @@
+@import "variables";
+
+.foda-chart-container {
+  width: 80%; /* Ajusta el ancho del contenedor */
+  max-width: 800px; /* Ancho máximo para que no crezca demasiado */
+  margin: 0 auto; /* Centrar el contenedor */
+}
+
+canvas {
+  width: 100% !important; /* Asegura que el canvas ocupe todo el ancho del contenedor */
+  height: auto !important; /* Ajusta la altura automáticamente */
+}

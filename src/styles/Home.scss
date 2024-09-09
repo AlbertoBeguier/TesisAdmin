@@ -1,0 +1,111 @@
+@import "variables";
+
+body {
+  background-color: $color-de-fondo; /* Fondo oscuro */
+  color: $color-texto; /* Color de las letras */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+  flex-direction: column;
+}
+
+.home-titulo {
+  margin-top: 40px;
+  font-size: 2em;
+  font-weight: 600;
+  color: $color-principal;
+  text-align: center;
+}
+
+.home-parrafo {
+  text-align: justify;
+  text-indent: 2em; /* Ajusta el valor de la sangría según tus necesidades */
+  margin: 10px 30px;
+  font-size: 1.4em;
+}
+
+ul {
+  list-style-type: none; /* Elimina los puntos de la lista */
+  padding: 0;
+}
+
+.empresa-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.empresa-button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1.6em;
+  font-weight: 600;
+  border: none;
+  background-color: transparent;
+  color: $color-secundario;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $color-principal;
+    transition: 0.8s;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+  }
+
+  &::after {
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    width: 100%;
+  }
+
+  &::first-line,
+  &::last-line {
+    content: "";
+    position: absolute;
+    background-color: $color-principal;
+    transition: 0.8s;
+    width: 2px;
+    height: 0;
+  }
+
+  &::first-line {
+    top: 0;
+    right: 0;
+  }
+
+  &::last-line {
+    bottom: 0;
+    left: 0;
+  }
+
+  &:hover::first-line,
+  &:hover::last-line {
+    height: 100%;
+    transition-delay: 0.8s;
+  }
+
+  &:hover {
+    color: $color-principal; /* Cambia el color del texto */
+  }
+}

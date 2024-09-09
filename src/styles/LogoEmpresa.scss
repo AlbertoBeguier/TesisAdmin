@@ -1,6 +1,6 @@
-@import "variables";
+@import "variables"; /* Asegúrate de tener las variables definidas en este archivo */
 
-.estrategico-container {
+.logo-empresa-container {
   background-color: $color-de-fondo; /* Fondo oscuro */
   color: $color-texto; /* Color del texto */
   padding: 40px;
@@ -10,28 +10,28 @@
   line-height: 1.8; /* Mejora la legibilidad */
 }
 
-.estrategico-titulo {
+.logo-empresa-titulo {
   font-size: 3em; /* Título principal más grande */
   color: $color-principal; /* Color principal */
   margin-bottom: 20px;
   text-align: center; /* Centra el título */
 }
 
-.estrategico-subtitulo {
-  font-size: 2.5em; /* Subtítulos más grandes */
+.logo-empresa-subtitulo {
+  font-size: 2em; /* Subtítulos más grandes */
   color: $color-secundario; /* Color secundario */
   margin-top: 30px;
   margin-bottom: 15px;
 }
 
-.estrategico-subsubtitulo {
+.logo-empresa-subsubtitulo {
   font-size: 2em; /* Sub-subtítulos */
   color: $color-principal;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-.estrategico-seccion {
+.logo-empresa-seccion {
   margin-bottom: 30px; /* Espacio entre secciones */
 }
 
@@ -60,8 +60,8 @@ h3 {
   margin-top: 20px; /* Espacio superior para los subtítulos */
 }
 
-.foda-enlace {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
+.logo-empresa-enlace {
+  text-decoration: none; /* Sin subrayado */
+  color: inherit; /* Mantiene el color heredado */
+  cursor: pointer; /* Muestra un cursor de puntero */
 }

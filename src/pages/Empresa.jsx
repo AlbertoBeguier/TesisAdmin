@@ -1,4 +1,5 @@
 import "../styles/Empresa.scss";
+import { Link } from "react-router-dom";
 
 export function Empresa() {
   return (
@@ -70,7 +71,10 @@ export function Empresa() {
       </section>
 
       <section className="empresa-seccion">
-        <h3 className="empresa-subsubtitulo">Logotipo de la Empresa</h3>
+        <Link to="/logo-empresa" className="empresa-enlace">
+          <h3 className="empresa-subsubtitulo">Logotipo de la Empresa</h3>
+        </Link>
+
         <p>
           El logotipo es la representación gráfica de la identidad corporativa
           de la empresa. Un buen logotipo debe ser simple, memorable, y

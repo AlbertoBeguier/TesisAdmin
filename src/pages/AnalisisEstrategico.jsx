@@ -101,7 +101,7 @@ export function AnalisisEstrategico() {
       </section>
 
       <section className="empresa-seccion">
-        <Link to="/analisis-foda">
+        <Link to="/analisis-foda" className="foda-enlace">
           <h3 className="empresa-subsubtitulo">Análisis FODA</h3>
         </Link>
         <p>

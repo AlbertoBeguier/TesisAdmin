@@ -31,6 +31,25 @@
   margin-top: 20px;
   margin-bottom: 10px;
 }
+.logo-empresa-imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espaciado entre las imágenes */
+  gap: 20px; /* Espacio entre imágenes */
+}
+
+.logo-empresa-imagen {
+  width: 22%; /* Hace que cuatro imágenes quepan en cada fila */
+  height: auto; /* Mantiene la proporción de las imágenes */
+  margin-bottom: 20px;
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para las imágenes */
+  transition: transform 0.3s ease; /* Transición suave para agrandar las imágenes */
+}
+
+.logo-empresa-imagen:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
+}
 
 .empresa-seccion {
   margin-bottom: 30px; /* Espacio entre secciones */
@@ -59,4 +78,10 @@ li {
 
 h3 {
   margin-top: 20px; /* Espacio superior para los subtítulos */
+}
+
+.empresa-enlace {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }

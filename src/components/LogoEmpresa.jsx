@@ -119,7 +119,7 @@ export function LogoEmpresa() {
       </p>
 
       <h2 className="logo-empresa-subtitulo">DISEÑOS REALIZADOS</h2>
-
+      <br />
       <div className="logo-empresa-imagenes">
         <img
           src="/imagenes/logo1.png"

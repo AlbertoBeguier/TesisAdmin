@@ -42,6 +42,35 @@ export function FodaChart({ data }) {
     0
   );
 
+  // Calcular la estrategia según el análisis FODA
+  let estrategia = "";
+  if (totalFortalezas + totalOportunidades > totalAmenazas + totalDebilidades) {
+    estrategia =
+      "ESTRATEGIA OFENSIVA (FO): Esta estrategia busca maximizar el crecimiento y expansión aprovechando las fortalezas internas y las oportunidades del entorno.";
+  } else if (
+    totalFortalezas + totalAmenazas >
+    totalDebilidades + totalOportunidades
+  ) {
+    estrategia =
+      "ESTRATEGIA DEFENSIVA (FA): Se enfoca en proteger a la organización de amenazas externas, utilizando sus fortalezas internas.";
+  } else if (
+    totalAmenazas + totalDebilidades >
+    totalFortalezas + totalOportunidades
+  ) {
+    estrategia =
+      "ESTRATEGIA DE SUPERVIVENCIA (DA): Busca minimizar las debilidades y evitar o mitigar las amenazas para proteger a la organización.";
+  } else if (
+    totalDebilidades + totalOportunidades >
+    totalFortalezas + totalAmenazas
+  ) {
+    estrategia =
+      "ESTRATEGIA DE REORIENTACIÓN (DO): Trata de aprovechar oportunidades externas para mejorar las debilidades internas.";
+  }
+
+  // Definir la parte final que siempre se mostrará en un párrafo separado
+  const notaFinal =
+    "En muchos casos, se debe seleccionar más de una estrategia para abordar diferentes aspectos de la situación empresarial. El análisis FODA no se limita a identificar una única estrategia, sino que proporciona un marco para desarrollar un conjunto de estrategias que, en conjunto, puedan abordar las fortalezas, debilidades, oportunidades y amenazas de manera integral.";
+
   const chartData = {
     labels,
     datasets: [
@@ -77,7 +106,7 @@ export function FodaChart({ data }) {
     plugins: {
       legend: {
         labels: {
-          color: "#000000", // Cambia el color del título a negro
+          color: "#000", // Cambia el color del título a negro
           font: {
             size: 20, // Aumenta el tamaño de las letras de la leyenda
           },
@@ -98,7 +127,7 @@ export function FodaChart({ data }) {
     <div className="foda-chart-container">
       {/* Mostrar los resultados del análisis FODA antes del gráfico */}
       <div className="foda-results">
-        <hr className="linea-horizontal" />
+        <hr />
         <h2 className="titulo-grafico">Resultados del Análisis FODA</h2>
         <br />
         <p className="texto-grafico">
@@ -118,10 +147,20 @@ export function FodaChart({ data }) {
           {totalAmenazas}
         </p>
       </div>
-      <hr className="linea-horizontal" />
+
       {/* Renderizar el gráfico de radar */}
       <Radar data={chartData} options={options} />
       <hr className="linea-horizontal" />
+      {/* Mostrar la estrategia debajo del gráfico */}
+      <div className="foda-strategy">
+        <h3 className="titulo-estrategia">ESTRATEGIA SEGÚN ANÁLISIS FODA</h3>
+        <p className="texto-estrategia">{estrategia}</p>
+      </div>
+      <hr className="linea-horizontal" />
+      {/* Mostrar la nota final en un párrafo separado */}
+      <div className="foda-final-note">
+        <p>{notaFinal}</p>
+      </div>
     </div>
   );
 }

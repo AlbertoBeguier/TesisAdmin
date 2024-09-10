@@ -30,3 +30,26 @@ canvas {
   background-color: $color-de-fondo;
   margin: 20px 0;
 }
+
+.titulo-estrategia {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: $color-de-fondo;
+  margin-bottom: 10px;
+}
+
+.texto-estrategia {
+  font-size: 1.4em;
+  color: $color-de-fondo;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.foda-final-note {
+  font-size: 0.8em;
+  color: $color-de-fondo;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: gray;
+  font-weight: 300;
+}

@@ -122,6 +122,16 @@ export function LogoEmpresa() {
       <br />
       <div className="logo-empresa-imagenes">
         <img
+          src="/imagenes/logo9.png"
+          alt="Logo 9"
+          className="logo-empresa-imagen"
+        />
+        <img
+          src="/imagenes/logo18.png"
+          alt="Logo 18"
+          className="logo-empresa-imagen"
+        />
+        <img
           src="/imagenes/logo1.png"
           alt="Logo 1"
           className="logo-empresa-imagen"
@@ -157,23 +167,13 @@ export function LogoEmpresa() {
           className="logo-empresa-imagen"
         />
         <img
-          src="/imagenes/logo8.png"
-          alt="Logo 8"
-          className="logo-empresa-imagen"
-        />
-        <img
           src="/imagenes/logo17.png"
           alt="Logo 17"
           className="logo-empresa-imagen"
         />
         <img
-          src="/imagenes/logo18.png"
-          alt="Logo 18"
-          className="logo-empresa-imagen"
-        />
-        <img
-          src="/imagenes/logo9.png"
-          alt="Logo 9"
+          src="/imagenes/logo8.png"
+          alt="Logo 8"
           className="logo-empresa-imagen"
         />
         <img

@@ -49,10 +49,16 @@ export function Empresa() {
           />
         </h2>
         <p>
-          El nombre de una empresa es uno de los activos más valiosos que posee.
-          Un nombre bien definido no solo debe identificar de manera clara y
-          precisa la actividad principal del negocio, sino también reflejar su
-          esencia y valores.
+          El nombre de una empresa es un activo clave dentro de su estrategia de
+          marketing y posicionamiento en el mercado. Un nombre bien seleccionado
+          tiene el poder de transmitir la misión, visión y valores corporativos,
+          creando un vínculo emocional con los clientes y reflejando el
+          propósito de la organización. Además, debe ser fácil de recordar,
+          diferenciarse de la competencia y ser adaptable a mercados
+          internacionales, considerando variaciones culturales y lingüísticas.
+          En este sentido, el nombre de nuestra empresa ha sido cuidadosamente
+          seleccionado para resonar con nuestra propuesta de valor y fortalecer
+          nuestro posicionamiento dentro del sector.
         </p>
 
         {editingSection.nombreEmpresa && (
@@ -93,9 +99,20 @@ export function Empresa() {
           />
         </h2>
         <p>
-          La presentación de la empresa debe incluir una descripción detallada
-          del tipo de entidad que es, como una Micro, Pequeña o Mediana Empresa
-          (MiPyME), así como su estructura societaria.
+          La empresa [Nombre de la empresa] es una organización clasificada como
+          Micro, Pequeña o Mediana Empresa (MiPyME), dedicada al sector [sector
+          de la industria], especializada en [actividad principal o
+          productos/servicios]. La empresa fue fundada en [año de fundación], y
+          desde entonces ha experimentado un crecimiento sostenible basado en la
+          innovación, calidad y un enfoque centrado en el cliente. Con una
+          estructura societaria [tipo de sociedad: por ejemplo, sociedad anónima
+          (S.A.), sociedad de responsabilidad limitada (S.R.L.), etc.], la
+          empresa se destaca por su agilidad en la toma de decisiones y su
+          capacidad de adaptación a las fluctuaciones del mercado. Nuestra
+          misión es [definir misión], mientras que nuestra visión se enfoca en
+          [definir visión]. Estos principios fundamentales guían todas nuestras
+          estrategias y operaciones, con el objetivo de generar valor para
+          nuestros clientes, empleados y accionistas.
         </p>
 
         {editingSection.presentacionEmpresa && (
@@ -135,8 +152,28 @@ export function Empresa() {
           />
         </h3>
         <p>
-          La estructura organizacional de una empresa define cómo se organizan
-          sus funciones, departamentos y niveles jerárquicos.
+          La estructura organizacional de nuestra empresa ha sido diseñada para
+          optimizar la eficiencia operativa y promover la colaboración
+          interdepartamental. En nuestra jerarquía, la toma de decisiones se
+          distribuye de manera tal que cada departamento tenga autonomía para
+          operar dentro de su área de especialización, pero siempre alineado con
+          los objetivos generales de la compañía. Nuestra empresa sigue un
+          modelo organizacional [modelo: jerárquico, matricial, plano, etc.],
+          que permite la flexibilidad en la asignación de recursos y la gestión
+          de proyectos transversales. Los principales departamentos incluyen:
+          Dirección General: Responsable de la estrategia corporativa y la toma
+          de decisiones de alto nivel. Departamento de Finanzas: Encargado de la
+          gestión financiera y el control de los recursos económicos.
+          Departamento de Marketing y Ventas: Dedicado a la creación y ejecución
+          de estrategias comerciales y de comunicación para atraer y retener
+          clientes. Departamento de Operaciones: Focalizado en la gestión de la
+          cadena de suministro, producción y logística, garantizando la
+          eficiencia y calidad en cada etapa. Departamento de Recursos Humanos:
+          Responsable de la selección, formación y bienestar del personal,
+          alineando el capital humano con la cultura y objetivos de la empresa.
+          La interconexión de estos departamentos es fundamental para garantizar
+          el logro de los objetivos estratégicos de la empresa y adaptarse
+          rápidamente a los cambios del entorno competitivo.
         </p>
 
         {editingSection.estructuraOrganizacional && (
@@ -176,8 +213,17 @@ export function Empresa() {
           onClick={() => handleEditSection("logotipoEmpresa")}
         />
         <p>
-          El logotipo es la representación gráfica de la identidad corporativa
-          de la empresa.
+          El logotipo de una empresa es uno de los pilares de su identidad
+          visual, y actúa como un símbolo gráfico que representa los valores, el
+          estilo y la personalidad corporativa. Nuestro logotipo ha sido
+          cuidadosamente diseñado para reflejar los atributos clave de nuestra
+          marca: [ejemplos: innovación, confianza, calidad, etc.]. El diseño del
+          logotipo combina [explicar elementos: colores, formas, tipografía] que
+          evocan [valores o emociones clave], asegurando una fácil
+          identificación en el mercado y una conexión emocional con nuestros
+          clientes. El uso consistente de este logotipo en toda nuestra
+          comunicación empresarial refuerza nuestra presencia en el mercado y
+          consolida nuestra imagen de marca.
         </p>
         {editingSection.logotipoEmpresa && (
           <div>

@@ -26,10 +26,13 @@
 }
 
 .empresa-subsubtitulo {
-  font-size: 2em; /* Sub-subtítulos */
-  color: $color-principal;
-  margin-top: 20px;
+  color: $color-secundario;
+  text-transform: uppercase;
   margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1.6em;
+  font-weight: 600;
 }
 .logo-empresa-imagenes {
   display: flex;
@@ -80,12 +83,6 @@ h3 {
   margin-top: 20px; /* Espacio superior para los subtítulos */
 }
 
-.empresa-enlace {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-
 .boton-editar {
   width: 3%;
   margin-left: 20px;
@@ -116,4 +113,84 @@ h3 {
 .correccion-texto {
   margin-bottom: 10px;
   color: red;
+}
+
+//boton de enlace
+
+.empresa-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.empresa-button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1.6em;
+  font-weight: 600;
+  border: none;
+  background-color: transparent;
+  color: $color-de-fondo; /* Define tu color secundario */
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.empresa-button::before,
+.empresa-button::after {
+  content: "";
+  position: absolute;
+  background-color: $color-de-fondo; /* Define tu color principal */
+  transition: 0.8s;
+}
+
+.empresa-button::before {
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+}
+
+.empresa-button::after {
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+}
+
+.empresa-button:hover::before,
+.empresa-button:hover::after {
+  width: 100%;
+}
+
+.empresa-button::first-line,
+.empresa-button::last-line {
+  content: "";
+  position: absolute;
+  background-color: $color-secundario;
+  transition: 0.8s;
+  width: 2px;
+  height: 0;
+}
+
+.empresa-button::first-line {
+  top: 0;
+  right: 0;
+}
+
+.empresa-button::last-line {
+  bottom: 0;
+  left: 0;
+}
+
+.empresa-button:hover::first-line,
+.empresa-button:hover::last-line {
+  height: 100%;
+  transition-delay: 0.8s;
+}
+
+.empresa-button:hover {
+  color: $color-principal;
 }

@@ -102,7 +102,7 @@ export function Empresa() {
           <div>
             <textarea
               className="text-tarea-correccion"
-              name="presentacionEmpresa" // Aquí se agrega el name para el textarea
+              name="presentacionEmpresa"
               value={corrections.presentacionEmpresa}
               onChange={handleInputChange}
               placeholder="Corrección de la presentación de la empresa"
@@ -143,7 +143,7 @@ export function Empresa() {
           <div>
             <textarea
               className="text-tarea-correccion"
-              name="estructuraOrganizacional" // Aquí se agrega el name para el textarea
+              name="estructuraOrganizacional"
               value={corrections.estructuraOrganizacional}
               onChange={handleInputChange}
               placeholder="Corrección de la estructura organizacional"
@@ -166,9 +166,9 @@ export function Empresa() {
 
       {/* Sección 4: LOGOTIPO DE LA EMPRESA */}
       <section className="empresa-seccion">
-        <Link to="/logo-empresa" className="empresa-enlace">
-          <h3 className="empresa-subsubtitulo">Logotipo de la Empresa</h3>
-        </Link>{" "}
+        <Link to="/logo-empresa" className="empresa-enlace empresa-button">
+          Logotipo de la Empresa
+        </Link>
         <img
           src="/imagenes/editar.png"
           alt="Editar"
@@ -183,7 +183,7 @@ export function Empresa() {
           <div>
             <textarea
               className="text-tarea-correccion"
-              name="logotipoEmpresa" // Aquí se agrega el name para el textarea
+              name="logotipoEmpresa"
               value={corrections.logotipoEmpresa}
               onChange={handleInputChange}
               placeholder="Corrección del logotipo de la empresa"

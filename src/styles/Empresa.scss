@@ -12,17 +12,20 @@
 }
 
 .empresa-titulo {
-  font-size: 3em; /* Título principal más grande */
+  font-size: 2em; /* Título principal más grande */
   color: $color-principal; /* Color principal */
   margin-bottom: 20px;
   text-align: center; /* Centra el título */
+  margin-bottom: 15px;
+  font-weight: 600;
 }
 
 .empresa-subtitulo {
-  font-size: 2.5em; /* Subtítulos más grandes */
+  font-size: 1.5em; /* Subtítulos más grandes */
   color: $color-secundario; /* Color secundario */
   margin-top: 30px;
   margin-bottom: 15px;
+  font-weight: 600;
 }
 
 .empresa-subsubtitulo {
@@ -31,7 +34,7 @@
   margin-bottom: 10px;
   margin-top: 10px;
   padding: 10px;
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-weight: 600;
 }
 .logo-empresa-imagenes {

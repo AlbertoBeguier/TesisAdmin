@@ -65,3 +65,23 @@ h3 {
   color: inherit;
   cursor: pointer;
 }
+
+.empresa-subsubtitulo-10 {
+  font-size: 1.4em;
+  color: $color-secundario-1;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.empresa-subsubtitulo-100 {
+  font-size: 1.4em;
+  color: $color-secundario-1;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.resaltado {
+  color: white;
+}

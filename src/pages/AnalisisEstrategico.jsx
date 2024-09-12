@@ -45,6 +45,15 @@ export function AnalisisEstrategico() {
           ¿Cuál es nuestro valor diferencial? Estas preguntas ayudan a enfocar
           los esfuerzos de la empresa en la creación de valor sostenible.
         </p>
+        <h3 className="empresa-subsubtitulo-10">Misión Propuesta</h3>
+        <p className="empresa-subsubtitulo-100">
+          Nuestra misión es ofrecer un servicio de lavado de autos de alta
+          calidad, donde la eficiencia y el cuidado de cada vehículo sean
+          nuestra prioridad. Nos comprometemos a optimizar el tiempo de nuestros
+          clientes, garantizando resultados impecables en el menor tiempo
+          posible, todo ello a través de procesos eficientes y tecnología
+          avanzada que respeten tanto el vehículo como el medio ambiente.
+        </p>
       </section>
 
       <section className="empresa-seccion">
@@ -70,6 +79,15 @@ export function AnalisisEstrategico() {
           de la organización y a los principales stakeholders para asegurar que
           todos estén alineados y comprometidos con los objetivos a largo plazo
           de la empresa.
+        </p>
+        <h3 className="empresa-subsubtitulo-10">Visión Propuesta</h3>
+        <p className="empresa-subsubtitulo-100">
+          Ser reconocidos como el lavadero de autos líder en el mercado,
+          distinguido por nuestra dedicación a la excelencia en el servicio y la
+          innovación en la optimización del tiempo. Aspiramos a convertirnos en
+          la primera opción de los consumidores que valoran la calidad, la
+          rapidez y el cuidado de su vehículo, contribuyendo a su satisfacción y
+          fidelidad a largo plazo.{" "}
         </p>
       </section>
 
@@ -97,6 +115,23 @@ export function AnalisisEstrategico() {
           Estos valores no solo guían el comportamiento dentro de la
           organización, sino que también fortalecen la reputación de la empresa
           y la confianza de los stakeholders.
+        </p>
+
+        <h3 className="empresa-subsubtitulo-10">Valores Propuestos</h3>
+        <p className="empresa-subsubtitulo-100">
+          Ofrecer a nuestros clientes un servicio de lavado de autos que se
+          distinga por tres valores clave:{" "}
+          <strong className="resaltado">
+            {" "}
+            calidad, respeto por el tiempo y seguridad.
+          </strong>{" "}
+          Nos comprometemos a cuidar y proteger sus vehículos con la máxima
+          calidad, asegurando que cada auto no solo refleje la personalidad de
+          su dueño, sino que también contribuya a su bienestar. Valoramos
+          profundamente el tiempo de nuestros clientes, por lo que garantizamos
+          una experiencia rápida y eficiente sin sacrificar la excelencia. De
+          esta manera, nuestros clientes disfrutan de un vehículo impecable y
+          seguro, mientras optimizan su tiempo.
         </p>
       </section>
 

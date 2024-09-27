@@ -40,7 +40,7 @@ export function Empresa() {
       {/* Sección 1: NOMBRE DE LA EMPRESA */}
       <section className="empresa-seccion">
         <h2 className="empresa-subtitulo">
-          NOMBRE DE LA EMPRESA
+          NOMBRE DE LA EMPRESA HOLA
           <img
             src="/imagenes/editar.png"
             alt="Editar"

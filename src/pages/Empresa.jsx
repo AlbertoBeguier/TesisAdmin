@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import {
   collection,
   doc,
-  getDoc,
+  onSnapshot,
   setDoc,
   updateDoc,
   deleteField,
 } from "firebase/firestore";
-import { db } from "/src/main"; // Asegúrate de que esta ruta sea correcta
+import { db } from "/src/main";
 import "../styles/Empresa.scss";
 
 export function Empresa() {
@@ -27,14 +27,15 @@ export function Empresa() {
   });
 
   useEffect(() => {
-    const fetchCorrections = async () => {
-      const docRef = doc(collection(db, "correcciones"), "empresa");
-      const docSnap = await getDoc(docRef);
+    const docRef = doc(collection(db, "correcciones"), "empresa");
+
+    const unsubscribe = onSnapshot(docRef, (docSnap) => {
       if (docSnap.exists()) {
         setCorrections(docSnap.data());
       }
-    };
-    fetchCorrections();
+    });
+
+    return () => unsubscribe();
   }, []);
 
   const handleInputChange = (e) => {
@@ -54,12 +55,10 @@ export function Empresa() {
     const docRef = doc(collection(db, "correcciones"), "empresa");
 
     if (corrections[section] === "") {
-      // Si el campo está vacío, eliminamos la corrección
       await updateDoc(docRef, {
         [section]: deleteField(),
       });
     } else {
-      // Si hay contenido, actualizamos o añadimos la corrección
       await setDoc(
         docRef,
         { [section]: corrections[section] },
